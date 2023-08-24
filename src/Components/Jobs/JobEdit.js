@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import { LogoSelect } from "./LogoSelect";
 import { LanguageSelect } from "../../Features/LanguageSelect";
-import Error from "../../Features/Error";
+
 const API = process.env.REACT_APP_API_URL;
 //
 export default function JobEdit() {
@@ -193,7 +193,6 @@ export default function JobEdit() {
           </button>
         </div>
       </form>
-      <Error error={error} success={success} />
     </div>
   );
 }

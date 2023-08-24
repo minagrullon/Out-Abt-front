@@ -15,11 +15,11 @@ function Provider({ children }) {
     address: "",
     native_language: "",
   });
-  
+
   useEffect(() => {
     const token = localStorage.getItem("jwtToken");
     if (token) {
-      const user = JSON.parse(localStorage.getItem('user_info'))
+      const user = JSON.parse(localStorage.getItem("user_info"));
       setUser(user);
     } else {
       setUser({
